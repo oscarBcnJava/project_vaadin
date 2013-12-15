@@ -26,11 +26,11 @@ public class ProjecthelloUI extends UI {
 		final VerticalLayout layout = new VerticalLayout();
 		layout.setMargin(true);
 		setContent(layout);
-
+		final Label lblHello = new Label("Hello World");
 		Button button = new Button("Click Me");
 		button.addClickListener(new Button.ClickListener() {
 			public void buttonClick(ClickEvent event) {
-				layout.addComponent(new Label("Thank you for clicking"));
+				layout.addComponent(lblHello);
 			}
 		});
 		layout.addComponent(button);
